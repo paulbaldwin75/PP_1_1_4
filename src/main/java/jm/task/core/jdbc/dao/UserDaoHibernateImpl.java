@@ -36,7 +36,6 @@ public class UserDaoHibernateImpl implements UserDao {
         try (Session session = SESSION_FACTORY.openSession()) {
             session.beginTransaction();
             sql = "DROP TABLE IF EXISTS Users";
-
             session.createSQLQuery(sql).executeUpdate();
         } catch (PersistenceException e) {
             e.printStackTrace();
@@ -81,7 +80,6 @@ public class UserDaoHibernateImpl implements UserDao {
         try (Session session = SESSION_FACTORY.openSession()) {
             session.beginTransaction();
             sql = "TRUNCATE TABLE Users";
-
             session.createSQLQuery(sql).executeUpdate();
         } catch (PersistenceException e) {
             e.printStackTrace();
