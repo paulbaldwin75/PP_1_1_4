@@ -12,10 +12,10 @@ public class Main {
 
         userService.createUsersTable();
 
-        userService.saveUser("Ivan", "LastName1", (byte) 20);
-        userService.saveUser("Name2", "LastName2", (byte) 25);
-        userService.saveUser("Name3", "LastName3", (byte) 31);
-        userService.saveUser("Name4", "LastName4", (byte) 38);
+        userService.saveUser("Ivan", "Ivanov", (byte) 20);
+        userService.saveUser("Petr", "Petrov", (byte) 25);
+        userService.saveUser("Paul", "Baldwin", (byte) 24);
+        userService.saveUser("Ksu", "Kiselova", (byte) 22);
 
         userService.removeUserById(1);
         userService.getAllUsers();
